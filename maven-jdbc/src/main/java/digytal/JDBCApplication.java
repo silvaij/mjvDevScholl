@@ -3,6 +3,7 @@ package digytal;
 import digytal.dao.CadastroDao;
 import digytal.jdbc.connection.FabricaConexao;
 import digytal.model.Cadastro;
+import digytal.model.Cliente;
 
 import java.sql.SQLException;
 
@@ -20,6 +21,9 @@ public class JDBCApplication {
 		//System.out.println(dao.excluir(cadastro.getId()));// teste ok
 		dao.listar();
 		//System.out.println(dao.buscar(1));// teste ok
+
+		Cliente cliente = new Cliente();
+
 
 	}
 }
