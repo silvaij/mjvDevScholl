@@ -25,21 +25,24 @@ public class ClienteDao {
         try{
             PreparedStatement instrucaoSql = conBd.prepareStatement(INSERT_CADASTRO_SQL);
             instrucaoSql.setInt(1,cliente.getCodigo_serial());
-            instrucaoSql.setCharacterStream(2,cliente.getPf_pj());
+            instrucaoSql.setString(2,cliente.getPf_pj());
             instrucaoSql.setString(3,cliente.getRazao_social());
             instrucaoSql.setString(4,cliente.getCnpj_cpf());
-            instrucaoSql.setInt(5,cliente.getCodigo_serial());
-            instrucaoSql.setInt(6,cliente.getCodigo_serial());
-            instrucaoSql.setInt(7,cliente.getCodigo_serial());
-            instrucaoSql.setInt(8,cliente.getCodigo_serial());
-            instrucaoSql.setInt(9,cliente.getCodigo_serial());
-            instrucaoSql.setInt(10,cliente.getCodigo_serial());
-            instrucaoSql.setInt(11,cliente.getCodigo_serial());
-            instrucaoSql.setInt(12,cliente.getCodigo_serial());
-            instrucaoSql.setInt(13,cliente.getCodigo_serial());
-            instrucaoSql.setInt(14,cliente.getCodigo_serial());
-            instrucaoSql.setInt(15,cliente.getCodigo_serial());
-            instrucaoSql.setInt(16,cliente.getCodigo_serial());
+            instrucaoSql.setString(5,cliente.getInscr_estadual_rg());
+            instrucaoSql.setString(6,cliente.getTelefone1());
+            instrucaoSql.setString(7,cliente.getEmail());
+            instrucaoSql.setString(8,cliente.getAtiv_profissao());
+            instrucaoSql.setString(9,cliente.getCep());
+            instrucaoSql.setString(10,cliente.getEstado());
+            instrucaoSql.setString(11,cliente.getCidade());
+            instrucaoSql.setString(12,cliente.getRua());
+            instrucaoSql.setString(13,cliente.getNumero());
+            instrucaoSql.setString(14,cliente.getComplemento());
+            instrucaoSql.setString(15,cliente.getBairro());
+            instrucaoSql.setString(16,cliente.getSite_instagem());
+            instrucaoSql.execute();
+            instrucaoSql.close();
+            System.out.println("Registro Inserido");
 
         }catch (SQLException e){
             e.printStackTrace();

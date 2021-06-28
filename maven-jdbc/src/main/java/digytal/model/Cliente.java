@@ -3,7 +3,7 @@ package digytal.model;
 public class Cliente {
     private Integer id;
     private Integer codigo_serial;
-    private char pf_pj;
+    private String pf_pj;
     private String razao_social;
     private String cnpj_cpf;
     private String inscr_estadual_rg;
@@ -12,7 +12,7 @@ public class Cliente {
     private String email;
     private String ativ_profissao;
     private String cep;
-    private char estado;
+    private String estado;
     private String cidade;
     private String rua;
     private String numero;
@@ -20,8 +20,8 @@ public class Cliente {
     private String bairro;
     private String site_instagem;
 
-    public Cliente( Integer codigo_serial,char pf_pj,String razao_social,String cnpj_cpf,String inscr_estadual_rg,String telefone1,String email,String ativ_profissao
-    ,String cep,char estado,String cidade,String rua,String numero,String complemento,String bairro,String site_instagem){
+    public Cliente(Integer codigo_serial, String pf_pj, String razao_social, String cnpj_cpf, String inscr_estadual_rg, String telefone1, String email, String ativ_profissao
+    , String cep, String estado, String cidade, String rua, String numero, String complemento, String bairro, String site_instagem){
         this.codigo_serial = codigo_serial;
         this.pf_pj = pf_pj;
         this.razao_social = razao_social;
@@ -57,11 +57,11 @@ public class Cliente {
         this.codigo_serial = codigo_serial;
     }
 
-    public char getPf_pj() {
+    public String getPf_pj() {
         return pf_pj;
     }
 
-    public void setPf_pj(char pf_pj) {
+    public void setPf_pj(String pf_pj) {
         this.pf_pj = pf_pj;
     }
 
@@ -129,11 +129,11 @@ public class Cliente {
         this.cep = cep;
     }
 
-    public char getEstado() {
+    public String getEstado() {
         return estado;
     }
 
-    public void setEstado(char estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
 
