@@ -16,7 +16,7 @@
 
 ### **Hierarquia Collections** 
 
-![image-20210630120629088](C:\Users\Isaque\AppData\Roaming\Typora\typora-user-images\image-20210630120629088.png)
+![image-20210630120629088](https://beginnersbook.com/wp-content/uploads/2013/12/Java-collection-framework-hierarchy.png)
 
 ### Características da Interface Set
   - **Não permite elementos duplicados .** Ao contrário da interface **List**  
@@ -46,9 +46,8 @@
   ```
 
 ## Descrição das principais Classes que implementam SET
- ![image-20210630123415303](C:\Users\Isaque\AppData\Roaming\Typora\typora-user-images\image-20210630123415303.png)
-    
-    
+![Image](https://static.wixstatic.com/media/208236_495b99cbd0764831bd7841778f7011fc~mv2.png/v1/fill/w_740,h_416,al_c,lg_1,q_95/208236_495b99cbd0764831bd7841778f7011fc~mv2.webp)
+
   ## Stack
   - Java 11 - Open JDK
   - Intellij e STS Eclipse como **IDE**
