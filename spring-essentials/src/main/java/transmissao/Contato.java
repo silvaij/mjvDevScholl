@@ -2,7 +2,7 @@ package transmissao;
 
 public class Contato {
     String nome;
-    String Telefone;
+    Long Telefone;
 
     public String getNome() {
         return nome;
@@ -12,11 +12,11 @@ public class Contato {
         this.nome = nome;
     }
 
-    public String getTelefone() {
+    public Long getTelefone() {
         return Telefone;
     }
 
-    public void setTelefone(String telefone) {
-        Telefone = telefone;
+    public void setTelefone(long telefome) {
+        Telefone = telefome;
     }
 }
